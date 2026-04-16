@@ -1,0 +1,40 @@
+#dialogue {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 16px 28px;
+  border-radius: 16px;
+
+  background: white;
+  border: 2px solid #6bbcff;
+
+  color: #222;
+  font-family: monospace;
+  font-size: 18px;
+  text-align: center;
+
+  max-width: 650px;
+
+  box-shadow: 
+    0 8px 20px rgba(0,0,0,0.12),
+    0 0 0 4px rgba(107,188,255,0.15); /* subtle glow border */
+}
+
+#fade-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease;
+  z-index: 999;
+}
+
+#fade-overlay.active {
+  opacity: 1;
+}
